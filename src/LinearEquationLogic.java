@@ -6,9 +6,7 @@ public class LinearEquationLogic {
     private LinearEquation coordinates;
     private boolean repeat = true;
 
-
     public LinearEquationLogic () {}
-
 
     public void start() {
         System.out.println("Welcome to the linear equation calculator!");

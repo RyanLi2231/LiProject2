@@ -5,7 +5,6 @@ public class LinearEquation {
     private int y2;
     private boolean zero = false;
 
-
     public LinearEquation (String coord1, String coord2) {
         x1 = Integer.parseInt(coord1.substring(1, coord1.indexOf(",")));
         y1 = Integer.parseInt(coord1.substring(coord1.indexOf(" ") + 1, coord1.indexOf(")")));
@@ -40,7 +39,6 @@ public class LinearEquation {
         else if ((y2 - y1) % (x2 - x1) == 0)
             slope = Math.abs((y2 - y1) / (x2 - x1)) + "";
 
-
         if (slope() == 0)
             return "y = " + yIntercept();
         if (yIntercept() == 0)
@@ -66,7 +64,6 @@ public class LinearEquation {
     private double roundToHundredth(double toRound) {
         return Math.round(toRound * 100) / 100.0;
     }
-
 
     //Getter
     public boolean getZero() {
