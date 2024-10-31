@@ -25,7 +25,12 @@ public class LinearEquationLogic {
         String c1 = scan.nextLine();
         System.out.print("Enter your second coordinate (eg. (5, 7)) : ");
         String c2 = scan.nextLine();
-        coordinates = new LinearEquation(c1, c2);
+        int x1 = Integer.parseInt(c1.substring(1, c1.indexOf(",")));
+        int y1 = Integer.parseInt(c1.substring(c1.indexOf(" ") + 1, c1.indexOf(")")));
+        int x2 = Integer.parseInt(c2.substring(1, c2.indexOf(",")));
+        int y2 = Integer.parseInt(c2.substring(c2.indexOf(" ") + 1, c2.indexOf(")")));
+        coordinates = new LinearEquation(x1, y1, x2, y2);
+        System.out.println("");
         System.out.println(coordinates.lineInfo());
     }
     private void mid() {

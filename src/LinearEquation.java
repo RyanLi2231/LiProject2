@@ -5,11 +5,11 @@ public class LinearEquation {
     private int y2;
     private boolean zero = false;
 
-    public LinearEquation (String coord1, String coord2) {
-        x1 = Integer.parseInt(coord1.substring(1, coord1.indexOf(",")));
-        y1 = Integer.parseInt(coord1.substring(coord1.indexOf(" ") + 1, coord1.indexOf(")")));
-        x2 = Integer.parseInt(coord2.substring(1, coord2.indexOf(",")));
-        y2 = Integer.parseInt(coord2.substring(coord2.indexOf(" ") + 1, coord2.indexOf(")")));
+    public LinearEquation (int x1, int y1, int x2, int y2) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
     }
 
     public double distance() {
