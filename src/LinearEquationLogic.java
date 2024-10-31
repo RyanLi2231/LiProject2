@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class LinearEquationLogic {
     private Scanner scan = new Scanner(System.in);
     private LinearEquation coordinates;
